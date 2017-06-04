@@ -6,6 +6,9 @@
   "repository": "git@github.com:designhorf/designhorf2017.git",
   "author": "designhorf <designhorf@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
