@@ -5,14 +5,14 @@ import './App.scss';
 const commits = [
 		{
 			"id": 1,
-			"date": "30-04-2016",
-			"text": "commit text",
+			"date": "April 30, 2016",
+			"text": "Started to learn React",
 			"isProject": true
 		},
 		{
 			"id": 2,
-			"date": "30-05-2016",
-			"text": "2. commit text",
+			"date": "May, 2016",
+			"text": "Started to learn...",
 			"isProject": false
 		}
 ];
