@@ -1,7 +1,19 @@
+$gray: #525252;
+
+html {
+    color: $gray;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .site-wrapper {
     background-color: #24eda1;
     color: #fff;
     display: flex;
     flex-direction: column;
     height: 40vw;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
