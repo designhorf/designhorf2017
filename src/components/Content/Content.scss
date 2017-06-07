@@ -1,9 +1,18 @@
+$gray: #525252;
 $lightgray: #efeded;
+$red : #ff5b70;
+$white: #fff;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 .commit-date {
     font-size: .9em;
+}
+
+.square {
+    background-color: $gray;
+    height: 10px;
+    width: 10px;
 }
 
 .commit-body {
@@ -15,6 +24,12 @@ $lightgray: #efeded;
     flex-direction: row;
     justify-content: flex-start;
     padding: 10px;
+}
+
+.project {
+    background-color: $red;
+    border: 1px solid $red;
+    color: $white;
 }
 
 .commit-title {
@@ -55,4 +70,12 @@ $lightgray: #efeded;
 
 .bold {
     font-weight: 600;
+}
+
+.bottom-space {
+    margin-bottom: 20px;
+}
+
+.commit-header {
+    margin-bottom: 13px;
 }
