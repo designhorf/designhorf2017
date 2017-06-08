@@ -5,14 +5,20 @@ import './App.scss';
 const commits = [
 		{
 			"id": 1,
-			"date": "April 30, 2016",
-			"text": "Started to learn React",
-			"isProject": true
+			"date": "April 30, 2014",
+			"text": "Started to learn HTML",
+			"isProject": false
 		},
 		{
 			"id": 2,
-			"date": "May, 2016",
-			"text": "Started to learn...",
+			"date": "April 30, 2014",
+			"text": "Started to learn CSS",
+			"isProject": true
+		},
+		{
+			"id": 3,
+			"date": "May, 2014",
+			"text": "Started to learn JavaScript",
 			"isProject": false
 		}
 ];
