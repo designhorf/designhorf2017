@@ -2,17 +2,27 @@ import React from 'react';
 import './Content.scss';
 
 const CommitHeader = (props) => {
-	return <p className="commit-date italic bold commit-header">Commits on { props.date }</p>
+	const { index, date, data } = props,
+		existsHeader = index > 0 && data[index - 1].date === date;
+
+	if (existsHeader) {
+		return null;
+	}
+
+	return (
+		<div className="title top-space">
+			<div className="square"></div>
+			<p className="commit-date italic bold commit-header">Commits on { date }</p>
+		</div>
+	)
 }
 
 const CommitBody = (props) => {
 	const { text, isProject } = props;
-	let classnames;
+	let classnames = 'commit-body';
 
 	if (isProject) {
-		classnames = 'commit-body project';
-	} else {
-		classnames = 'commit-body';
+		classnames = classnames + ' project';
 	}
 
 	return (
@@ -34,9 +44,10 @@ export default function Content({ data }) {
 	return (
 		<div className="content">
 			{
-				data.map(commit => 
-					<section key={ commit.id } className="commit-wrap bottom-space">
-						<CommitHeader date={ commit.date } />
+				data.map((commit, index) => 
+					<section key={ index } className="commit-wrap">
+						<div className="line"></div>
+						<CommitHeader date={ commit.date } index={ index } data={ data } />
 						<CommitBody text={ commit.text } isProject={ commit.isProject } /> 
 					</section>
 				)
