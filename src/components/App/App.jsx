@@ -4,6 +4,7 @@ import './App.scss';
 
 const commits = [
 		{
+			// "date": "2014-04-01",
 			"year": 2014,
 			"month": "April",
 			"text": "Started to learn HTML",
@@ -126,15 +127,9 @@ const commits = [
 		{
 			"year": 2017,
 			"month": "May",
-			"text": "Started to learn Redux",
+			"text": "Started to learn React",
 			"isProject": false
-		},
-		{
-			"year": 2017,
-			"month": "May",
-			"text": "Started to learn Next.js",
-			"isProject": false
-		},
+		}
 ];
 
 export default function App() {  
