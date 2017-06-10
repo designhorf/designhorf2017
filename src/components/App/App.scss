@@ -1,8 +1,15 @@
-$gray: #525252;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import '../Colours.scss';
 
 html {
     color: $gray;
     font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .site-wrapper {
@@ -13,13 +20,24 @@ html {
     height: 40vw;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .main-wrap {
     margin: 0 auto;
     max-width: 1000px;
     width: 80%;
+}
+
+.top-space {
+    margin-top: 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bottom-space {
+    margin-bottom: 20px;
 }
