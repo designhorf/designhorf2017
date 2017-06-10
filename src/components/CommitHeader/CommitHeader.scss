@@ -1,0 +1,22 @@
+@import '../Colours.scss';
+
+.title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 13px;
+}
+
+.square {
+    background-color: $gray;
+    height: 10px;
+    margin-left: -17px;
+    width: 10px;
+    position: absolute;
+    z-index: 5;
+}
+
+.commit-date {
+    font-size: .9em;
+}
