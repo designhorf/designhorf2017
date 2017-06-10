@@ -1,0 +1,50 @@
+@import '../Colours.scss';
+
+.project {
+    background-color: $red;
+    border: 1px solid $red;
+    color: $white;
+}
+
+.commit-body {
+    align-items: center;
+    border: 1px solid $lightgray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+
+    .profile-pic {
+        border-radius: 3px;
+        height: 40px;
+        margin-right: 10px;
+        width: 40px;
+    }
+
+    .commit-title {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .commit-small-texts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .committed-ago {
+        font-weight: 300;
+    }
+
+    .committed-ago,
+    .username {
+        font-size: .7em;
+    }
+
+    .username {
+        font-weight: 600;
+        margin-right: 5px;
+    }
+}
