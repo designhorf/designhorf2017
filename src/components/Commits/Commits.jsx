@@ -1,6 +1,7 @@
 import React from 'react';
 import CommitHeader from '../CommitHeader';
 import CommitBody from '../CommitBody';
+import './Commits.scss'
 
 export default function Commits ({ data }) {
 	return (
