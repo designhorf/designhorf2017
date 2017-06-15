@@ -1,14 +1,17 @@
 import React from 'react';
-import Branch from '../Branch';
-import PageTitle from '../PageTitle';
-import Commits from '../Commits';
+import { Switch, Route } from 'react-router-dom';
+import Home from './../../pages/Home';
+import Design from './../../pages/Design';
+import Code from './../../pages/Code';
 
 export default function Content({ data }) {  
 	return (
-		<div className="content">
-			<PageTitle />
-			<Branch />
-			<Commits data={ data }/>
-		</div>
+		<Switch>
+			<Route exact path='/' component={ Home } />
+			<Route path='/design' component={ Design } />
+			<Route path='/code' component={ () => 
+				<Code data={ data } /> }
+			/>
+		</Switch>
 	);
 }
