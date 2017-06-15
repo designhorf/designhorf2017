@@ -1,0 +1,24 @@
+.navigation {
+    box-sizing: border-box;
+    height: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: fixed;
+    top: 20px;
+    width: 80%;
+
+    &-list {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0;
+        width: inherit;
+
+        &-element {
+            margin: 10px;
+        }
+    }
+}

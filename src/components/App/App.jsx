@@ -1,5 +1,6 @@
 import React from 'react';
 import Content from '../Content';  
+import Navigation from '../Navigation';  
 import './App.scss';
 
 const commits = [
@@ -134,6 +135,9 @@ const commits = [
 
 export default function App() {  
   return (
+	<div>
+		<Navigation />
 		<Content data={ commits }/>
+	</div>
   );
 }
