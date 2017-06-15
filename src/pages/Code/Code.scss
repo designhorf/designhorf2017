@@ -1,0 +1,10 @@
+@import './../../components/Colours.scss';
+
+.line {
+    background-color: $lightgray;
+    height: inherit;
+    margin-left: -15px;
+    min-height: 130px;
+    position: absolute;
+    width: 6px;
+}
