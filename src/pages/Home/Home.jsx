@@ -1,14 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Introduction from './../../components/Introduction';
-
-const Button = ({ buttonText }) => {
-    return (
-        <button className="btn">
-            { buttonText }
-        </button>
-    )
-}
+import Button from './../../components/Button';
 
 export default function Home() {  
 	return (
