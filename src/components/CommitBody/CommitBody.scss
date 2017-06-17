@@ -21,11 +21,23 @@
         height: 40px;
         margin-right: 10px;
         width: 40px;
+
+        @media (max-width: 399px) {
+            display: none;
+        }
     }
 
     .commit-title {
         font-size: 1.2em;
         font-weight: 600;
+
+        @media (max-width: 400px) {
+            font-size: 1em;
+        }
+
+        @media (min-width: 401px) and (max-width: 600px) {
+            font-size: 1.1em;
+        }
     }
 
     .commit-small-texts{
@@ -41,6 +53,10 @@
     .committed-ago,
     .username {
         font-size: .7em;
+
+        @media (max-width: 400px) {
+            font-size: .6em;
+        }
     }
 
     .username {
