@@ -16,7 +16,6 @@
     @media (max-width: 500px) and (orientation: portrait) {
         background-color: $gray2;
         bottom: 0;
-        color: $gray;
         left: 0;
         top: inherit;
         width: 100%;
@@ -39,5 +38,18 @@
             justify-content: center;
             margin: 10px;
         }
+    }
+}
+
+.navigation-list-element {
+    a {
+        color: $gray;
+        text-decoration: none;
+    }
+}
+
+.active {
+    a {
+        color: $green;
     }
 }
