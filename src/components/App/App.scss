@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Raleway:800');
 @import '../Colours.scss';
+@import '../Text.scss';
 
 html {
     color: $gray;
-    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -28,14 +29,6 @@ p {
 
 .top-space {
     margin-top: 20px;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.bold {
-    font-weight: 600;
 }
 
 .bottom-space {
