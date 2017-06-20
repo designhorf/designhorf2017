@@ -11,7 +11,13 @@ h1 {
 h1,
 h3 {
     color: $white;
-    display: inline;
+}
+
+.home-header {
+    h1,
+    h3 {
+        display: inline;
+    }
 }
 
 .introduction-1 {

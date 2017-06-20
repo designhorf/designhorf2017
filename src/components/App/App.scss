@@ -3,6 +3,11 @@
 @import '../Colours.scss';
 @import '../Text.scss';
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     color: $gray;
     font-family: 'Open Sans', sans-serif;
@@ -11,6 +16,14 @@ html {
 p {
     margin: 0;
     padding: 0;
+}
+
+.content {
+    margin-top: 50px;
+
+    @media (max-width: 600px) {
+        margin-top: 20px;
+    }
 }
 
 .site-wrapper {
