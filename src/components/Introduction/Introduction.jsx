@@ -4,9 +4,11 @@ import './Introduction.scss';
 export default function Introduction () {
     return (
         <div className="home-header">
-            <h1>Hi, I am</h1>
-            <h1>Ferenc Horvath</h1>
-            <h3>Front-end developer & UI designer</h3>
+            <h1 className="introduction-1 bg-green">Hi, I am</h1>
+            <br/>
+            <h1 className="introduction-1 bg-green">Ferenc Horvath</h1>
+            <br/>
+            <h3 className="bg-green">Front-end developer & UI designer</h3>
         </div>
     )
 }
