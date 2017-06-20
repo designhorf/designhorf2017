@@ -8,7 +8,7 @@ export default function Introduction () {
             <br/>
             <h1 className="introduction-1 bg-green">Ferenc Horvath</h1>
             <br/>
-            <h3 className="bg-green">Front-end developer & UI designer</h3>
+            <h3 className="introduction-3 bg-green">Front-end developer & UI designer</h3>
         </div>
     )
 }
