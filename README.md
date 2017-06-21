@@ -1,4 +1,4 @@
-# designhorf2017
+# designhorf.com
 Personal website w/ design&coding skills + references
 
 First project with the following techniques:
