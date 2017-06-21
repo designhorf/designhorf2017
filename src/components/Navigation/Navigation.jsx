@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
+import MenuElement from '../MenuElement';
 import './Navigation.scss';
 
 export default function Navigation () {
@@ -7,9 +7,9 @@ export default function Navigation () {
         <header className="navigation">
             <nav>
                 <ul className="navigation-list">
-                    <li className="navigation-list-element"><Link to='/'>Home</Link></li>
-                    <li className="navigation-list-element"><Link to='/code'>Code</Link></li>
-                    <li className="navigation-list-element"><Link to='/design'>Design</Link></li>
+                    <MenuElement linkTarget='/' menuText='Home' />
+                    <MenuElement linkTarget='/code' menuText='Code' />
+                    <MenuElement linkTarget='/design' menuText='Design' />
                 </ul>
             </nav>
         </header>

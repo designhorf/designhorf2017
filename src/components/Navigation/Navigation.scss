@@ -50,7 +50,6 @@
 }
 
 .active {
-    a {
-        color: $green;
-    }
+    border-bottom: 3px solid $red;
+    margin-top: 2px;
 }
