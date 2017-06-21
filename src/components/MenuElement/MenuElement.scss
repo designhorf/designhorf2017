@@ -1,0 +1,18 @@
+@import '../Colours.scss';
+
+.active {
+    border-bottom: 3px solid $red;
+    margin-top: 2px;
+}
+
+.navigation-list-element {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+    a {
+        color: $gray;
+        text-decoration: none;
+    }
+}

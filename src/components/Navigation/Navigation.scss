@@ -32,24 +32,5 @@
         max-width: 1000px;
         padding: 0;
         width: inherit;
-
-        &-element {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            margin: 10px;
-        }
     }
-}
-
-.navigation-list-element {
-    a {
-        color: $gray;
-        text-decoration: none;
-    }
-}
-
-.active {
-    border-bottom: 3px solid $red;
-    margin-top: 2px;
 }
