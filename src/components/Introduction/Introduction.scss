@@ -9,20 +9,23 @@
     }
 }
 
-h1 {
+span {
+    color: $white;
     font-family: 'Raleway', sans-serif;
 }
 
-h1,
-h3 {
-    color: $white;
+.introduction-box {
+    margin-bottom: 20px;
 }
 
-.home-header {
-    h1,
-    h3 {
-        display: inline;
-    }
+.introduction-1,
+.introduction-3 {
+    -moz-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font-weight: 800;
+    padding: 5px 10px;
 }
 
 .introduction-1 {
@@ -39,6 +42,7 @@ h3 {
 
 .introduction-3 {
     font-size: 1.8em;
+    font-weight: 300;
 
     @media (min-width: 321px) and (max-width: 600px) {
         font-size: 1.65em;
