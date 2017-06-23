@@ -1,0 +1,39 @@
+@import '../Colours.scss';
+
+.btn {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    position: absolute;
+
+    @media (min-width: 400px) and (max-width: 600px) {
+        font-size: 2em;
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+        font-size: 3.3em;
+    }
+
+    @media (min-width: 1025px) {
+        font-size: 4.5em;
+    }
+
+    &-design {
+        background-color: $gray;
+        color: $lightgray;
+        left: 10%;
+        padding: 5px 10px;
+        transform: rotateZ(-15deg);
+    }
+
+    &-code {
+        background-color: $lightgray;
+        color: $gray;
+        padding: 5px 20px;
+        right: 10%;
+        transform: rotateZ(15deg);
+    }
+}
