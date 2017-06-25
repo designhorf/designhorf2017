@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import ProfilePic from './profile_pic.jpg';
 import './CommitBody.scss';
 
 export default function CommitBody ({ text, isProject, year, month }) {
@@ -7,7 +8,7 @@ export default function CommitBody ({ text, isProject, year, month }) {
 	
 	return (
 		<div className={ getClassName(isProject) }>
-			<img className="profile-pic" src="./src/images/profile_pic.jpg" alt="profile pic"/>
+			<img className="profile-pic" src={ ProfilePic } alt="profile pic"/>
 			
 			<div className="commit-text-wrap">
 				<p className="commit-title">{ text }</p>

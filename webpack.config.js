@@ -30,8 +30,27 @@ module.exports = {
       },
       {
         test: /\.(css|scss|sass)$/,
-        loader: 'style-loader!css-loader!sass-loader',
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ],
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        loader: 'image-webpack-loader',
+        query: {
+          mozjpeg: {
+            progressive: true,
+          },
+          gifsicle: {
+            interlaced: true,
+          },
+          optipng: {
+            optimizationLevel: 7,
+          }
+        }
+      }
     ]
   },
 };
