@@ -23,6 +23,12 @@ module.exports = {
         use: [ 'babel-loader' ]
       },
       {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+      {
         test: /\.(css|scss|sass)$/,
         loader: 'style-loader!css-loader!sass-loader',
       },

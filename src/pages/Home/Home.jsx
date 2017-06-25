@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Introduction from './../../components/Introduction';
 import Button from './../../components/Button';
+import ProfilePic from './FH.png';
 import './Home.scss';
 
 export default function Home() {  
@@ -12,7 +13,7 @@ export default function Home() {
 				<Link to='/design'>
                 	<Button buttonText="Design" buttonClass="btn-design" />
 				</Link>
-                <img className="big-profile-pic" src="./src/images/FH.png" alt="Ferenc Horvath"/>
+                <img className="big-profile-pic" src={ ProfilePic } alt="Ferenc Horvath"/>
 				<Link to='/code'>
                 	<Button buttonText="Code" buttonClass="btn-code" />
 				</Link>
