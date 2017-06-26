@@ -1,9 +1,10 @@
 import React from 'react';
-import PsIcon from './ps.svg';
-import IllustratorIcon from './illustrator.svg';
-import SketchIcon from './sketch.svg';
-import InvisionIcon from './invision.svg';
-import MarvelIcon from './marvel.svg';
+import PsIcon from './Icons/ps.svg';
+import IllustratorIcon from './Icons/illustrator.svg';
+import SketchIcon from './Icons/sketch.svg';
+import InvisionIcon from './Icons/invision.svg';
+import MarvelIcon from './Icons/marvel.svg';
+import './ToolIcons.scss';
 
 export default function ToolIcons () {
     return (
