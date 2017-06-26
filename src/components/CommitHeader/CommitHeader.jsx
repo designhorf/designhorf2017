@@ -27,7 +27,7 @@ export default function CommitHeader ({ index, data, month, year }) {
 	}
 
 	return (
-		<div className="title top-space">
+		<div className="title top-space title-bottom-space">
 			<div className="square"></div>
 			<p className="commit-date italic bold commit-header">Commits on { month }, { year }</p>
 		</div>
