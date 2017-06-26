@@ -1,9 +1,27 @@
 import React from 'react';
+import ReferenceTools from '../ReferenceTools';
+import ReferenceImages from '../ReferenceImages';
+import './References.scss';
 
 export default function References ({ data }) {
     return (
-        <div>
-            { console.log(data) }
+        <div className="references">
+            {
+				data.map((reference, index) => 
+					<section key={ index } className="reference-wrap">
+                        <div className="title top-space">
+                            <div className="square"></div>
+                            <p className="italic bold reference-header">{ reference.text }</p>
+                        </div>
+                        <div className="reference-date title">
+                            <p className="italic thin">{ reference.month } { reference.year }</p>
+                            <ReferenceTools data={ reference.tools } />
+                        </div>
+                        <br/>
+                        <ReferenceImages data={ reference.images } />
+					</section>
+				)
+			}
         </div>
     )
 }
