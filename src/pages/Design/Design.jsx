@@ -18,6 +18,27 @@ export default function Design() {
 			"month": 'From December',
 			"tools": ['ps'],
 			"images": ['iw001.jpg', 'iw002.jpg', 'iw003.jpg', 'iw004.jpg']
+		},
+		{
+			"text": 'PRV Team',
+			"year": '2016',
+			"month": 'December',
+			"tools": ['sketch'],
+			"images": ['prvteam-mockup-long.jpg']
+		},
+		{
+			"text": 'Layout design for Little Italy Restaurant',
+			"year": '2016',
+			"month": 'January',
+			"tools": ['sketch'],
+			"images": ['littleitaly-long.jpg']
+		},
+		{
+			"text": 'Design opening & closing screen for Journey to my dreams daily vlog',
+			"year": '2016',
+			"month": 'January',
+			"tools": ['ps', 'camera'],
+			"images": ['jtmd.jpg']
 		}
 	];
 
