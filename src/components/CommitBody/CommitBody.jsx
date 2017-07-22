@@ -3,18 +3,18 @@ import moment from 'moment';
 import ProfilePic from './profile_pic.jpg';
 import './CommitBody.scss';
 
-export default function CommitBody ({ text, isProject, year, month }) {
-	const monthValue = moment().month(month).format("M") - 1;
+export default function CommitBody ({ index, isProject, text, date }) {
+	// const monthValue = moment().month(month).format("M") - 1;
 	
 	return (
-		<div className={ getClassName(isProject) }>
+		<div key={ index } className={ getClassName(isProject) }>
 			<img className="profile-pic" src={ ProfilePic } alt="profile pic"/>
 			
 			<div className="commit-text-wrap">
 				<p className="commit-title">{ text }</p>
 				<div className="commit-small-texts">
 					<b className="username">designhorf</b>
-					<p className="committed-ago">committed on Github { moment([year, monthValue]).fromNow() }</p>
+					<p className="committed-ago">committed on Github { date }</p>
 				</div>
 			</div>
 		</div>

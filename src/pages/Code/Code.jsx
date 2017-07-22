@@ -2,134 +2,111 @@ import React from 'react';
 import Branch from './../../components/Branch';
 import PageTitle from './../../components/PageTitle';
 import Commits from './../../components/Commits';
-import './Code.scss';
 
 export default function Content() {  
 	const commits = [
 			{
-				// "date": "2014-04-01",
-				"year": 2014,
-				"month": "April",
+				"date": "2014-04",
 				"text": "Started to learn HTML",
 				"isProject": false
 			},
 			{
-				"year": 2014,
-				"month": "April",
+				"date": "2014-04",
 				"text": "Started to learn CSS",
 				"isProject": false
 			},
 			{
-				"year": 2014,
-				"month": "May",
+				"date": "2014-05",
 				"text": "Started to learn JavaScript",
 				"isProject": false
 			},
 			{
-				"year": 2014,
-				"month": "May",
+				"date": "2014-05",
 				"text": "Started to learn Git",
 				"isProject": false
 			},
 			{
-				"year": 2014,
-				"month": "June",
+				"date": "2014-06",
 				"text": "Deployed 1st project",
 				"isProject": true
 			},
 			{
-				"year": 2014,
-				"month": "June",
+				"date": "2014-06",
 				"text": "Started to use npm+grunt",
 				"isProject": false
 			},
 			{
-				"year": 2014,
-				"month": "August",
+				"date": "2014-08",
 				"text": "Started to learn jQuery",
 				"isProject": false
 			},
 			{
-				"year": 2014,
-				"month": "October",
+				"date": "2014-10",
 				"text": "Started to use Twig",
 				"isProject": false
 			},
 			{
-				"year": 2014,
-				"month": "December",
+				"date": "2014-12",
 				"text": "RPD",
 				"isProject": true
 			},
 			{
-				"year": 2015,
-				"month": "February",
+				"date": "2015-02",
 				"text": "Started to use Gulp",
 				"isProject": false
 			},
 			{
-				"year": 2015,
-				"month": "April",
+				"date": "2015-04",
 				"text": "Created blog w/ jekyll",
 				"isProject": true
 			},
 			{
-				"year": 2015,
-				"month": "July",
+				"date": "2015-07",
 				"text": "Created 1st server w/ Node.js",
 				"isProject": false
 			},
 			{
-				"year": 2015,
-				"month": "July",
+				"date": "2015-07",
 				"text": "Started to use Express.js",
 				"isProject": false
 			},
 			{
-				"year": 2015,
-				"month": "November",
+				"date": "2015-11",
 				"text": "Started to use Handlebar.js",
 				"isProject": false
 			},
 			{
-				"year": 2016,
-				"month": "April",
+				"date": "2016-04",
 				"text": "Started to use Heroku",
 				"isProject": false
 			},
 			{
-				"year": 2016,
-				"month": "September",
+				"date": "2016-09",
 				"text": "Started to learn ES6",
 				"isProject": false
 			},
 			{
-				"year": 2016,
-				"month": "September",
+				"date": "2016-09",
 				"text": "Started to learn Babel",
 				"isProject": false
 			},
 			{
-				"year": 2016,
-				"month": "December",
+				"date": "2016-12",
 				"text": "Experimented w/ webpack",
 				"isProject": false
 			},
 			{
-				"year": 2017,
-				"month": "February",
+				"date": "2017-02",
 				"text": "Started to use yarn",
 				"isProject": false
 			},
 			{
-				"year": 2017,
-				"month": "April",
+				"date": "2017-04",
 				"text": "Deployed PRV project",
 				"isProject": true
 			},
 			{
-				"year": 2017,
-				"month": "May",
+				"date": "2017-05",
 				"text": "Started to learn React",
 				"isProject": false
 			}
