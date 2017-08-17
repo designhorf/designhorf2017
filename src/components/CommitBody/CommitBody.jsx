@@ -4,17 +4,20 @@ import ProfilePic from './profile_pic.jpg';
 import './CommitBody.scss';
 
 export default function CommitBody ({ index, isProject, text, date }) {
-	// const monthValue = moment().month(month).format("M") - 1;
-	
+	const m = moment({date}.date),
+		today = moment().startOf('day'),
+		days = Math.round(moment.duration(today - m).asDays()),
+		months = Math.round(moment.duration(today - m).asMonths()),
+		years = Math.round(moment.duration(today - m).asYears());
+
 	return (
 		<div key={ index } className={ getClassName(isProject) }>
-			<img className="profile-pic" src={ ProfilePic } alt="profile pic"/>
-			
+			<img className="profile-pic" src={ ProfilePic } alt="profile pic"/>			
 			<div className="commit-text-wrap">
 				<p className="commit-title">{ text }</p>
 				<div className="commit-small-texts">
 					<b className="username">designhorf</b>
-					<p className="committed-ago">committed on Github { date }</p>
+					<p className="committed-ago">committed on Github { days < 365 ? days + ' days' : years + ' years' } ago</p>
 				</div>
 			</div>
 		</div>
