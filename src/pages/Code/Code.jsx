@@ -3,7 +3,7 @@ import Branch from './../../components/Branch';
 import PageTitle from './../../components/PageTitle';
 import Commits from './../../components/Commits';
 
-export default function Content() {  
+export default function Code() {  
 	const commits = [
 			{
 				"date": "2014-04",
