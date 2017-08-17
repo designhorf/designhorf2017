@@ -2,6 +2,7 @@
 
 .navigation {
     align-items: center;
+    background: linear-gradient(to right, rgba(255,255,255,0) 64%,rgba(235,234,234,1) 100%);
     box-sizing: border-box;
     display: flex;
     height: 50px;
@@ -20,6 +21,10 @@
         padding: 0 10%;
         top: inherit;
         width: 100%;
+    }
+
+    @media (min-width: 500px) and (max-width: 810px) {
+        background: linear-gradient(to right, rgba(255,255,255,0) 38%,rgba(235,234,234,1) 100%)
     }
 
     &-list {
