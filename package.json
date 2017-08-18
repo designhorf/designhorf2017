@@ -2,7 +2,7 @@
   "name": "designhorf2017",
   "version": "1.0.0",
   "description": "designhorf's personal website",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "git@github.com:designhorf/designhorf2017.git",
   "author": "designhorf <designhorf@gmail.com>",
   "license": "MIT",
