@@ -9,8 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "dev": "webpack-dev-server",
-    "server": "node index.js",
-    "postinstall": "webpack -p"
+    "server": "node index.js"
   },
   "dependencies": {
     "express": "^4.15.4",
