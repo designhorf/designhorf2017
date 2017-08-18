@@ -1,5 +1,4 @@
 import React from 'react';
-import images from './images';
 import VardaVed from './Images/vardaved.jpg';
 import iw1 from './Images/iw001.jpg';
 import iw2 from './Images/iw002.jpg';
