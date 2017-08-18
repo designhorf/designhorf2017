@@ -7,9 +7,10 @@
   "author": "designhorf <designhorf@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "node index.js",
     "dev": "webpack-dev-server",
-    "server": "node index.js"
+    "server": "node index.js",
+    "postinstall": "webpack -p --config"
   },
   "dependencies": {
     "express": "^4.15.4",
