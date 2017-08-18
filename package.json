@@ -10,7 +10,7 @@
     "start": "node index.js",
     "dev": "webpack-dev-server",
     "server": "node index.js",
-    "postinstall": "webpack -p --config"
+    "postinstall": "webpack -p"
   },
   "dependencies": {
     "express": "^4.15.4",
