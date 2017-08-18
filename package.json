@@ -10,7 +10,8 @@
     "start": "node index.js",
     "dev": "webpack-dev-server",
     "server": "node index.js",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "dependencies": {
     "express": "^4.15.4",
