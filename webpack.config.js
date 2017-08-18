@@ -7,7 +7,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'src/build'),
-    filename: 'build.js',
+    filename: 'build.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
