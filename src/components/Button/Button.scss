@@ -24,7 +24,7 @@
     &-design {
         background-color: $gray;
         color: $lightgray;
-        left: 10%;
+        left: 15%;
         padding: 5px 10px;
         transform: rotateZ(-15deg);
     }
@@ -33,7 +33,11 @@
         background-color: $lightgray;
         color: $gray;
         padding: 5px 20px;
-        right: 10%;
+        right: 20%;
         transform: rotateZ(15deg);
+        
+        @media (min-width: 1600px) {
+            right: 25%;
+        }
     }
 }

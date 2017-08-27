@@ -7,7 +7,7 @@ export default function References ({ data }) {
     return (
         <div className="references">
             {
-				data.map((reference, index) => 
+                data.map((reference, index) => 
 					<section key={ index } className="reference-wrap">
                         <div className="title top-space">
                             <div className="square"></div>
