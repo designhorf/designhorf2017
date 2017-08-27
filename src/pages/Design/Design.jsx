@@ -4,7 +4,7 @@ import Tools from './../../components/Tools';
 import References from './../../components/References';
 
 export default function Design() {  
-	const designs = [
+	const designReferences = [
 		{
 			"text": 'Logo design for Varda-Véd Ltd.',
 			"year": '2014',
@@ -46,7 +46,7 @@ export default function Design() {
 		<div className="content">
 			<PageTitle title = 'Design' />
 			<Tools />
-			<References data={ designs }/>
+			<References data={ designReferences }/>
 		</div>
 	);
 }
