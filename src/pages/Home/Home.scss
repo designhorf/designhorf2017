@@ -1,5 +1,28 @@
 .big-profile-pic{
-    width: 90%;
+    width: 50%;
+
+    @media (min-width: 300px) {
+        width: 80%;
+    }
+
+    @media (min-width: 400px) {
+        margin-top: 10%;
+        width: 90%;
+    }
+
+    @media (min-width: 700px) {
+        width: 70%;
+    }
+
+    @media (min-width: 860px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 0;
+    }
+
+
 }
 
 .home {

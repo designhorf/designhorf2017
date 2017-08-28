@@ -3,7 +3,7 @@ import Branch from './../../components/Branch';
 import PageTitle from './../../components/PageTitle';
 import Commits from './../../components/Commits';
 
-export default function Content() {  
+export default function Code() {  
 	const commits = [
 			{
 				"date": "2014-04",
@@ -108,6 +108,11 @@ export default function Content() {
 			{
 				"date": "2017-05",
 				"text": "Started to learn React",
+				"isProject": false
+			},
+			{
+				"date": "2017-07",
+				"text": "Started to use GSAP",
 				"isProject": false
 			}
 	];
