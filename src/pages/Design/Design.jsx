@@ -17,10 +17,11 @@ export default function Design() {
 			"year": '2015',
 			"month": 'From December',
 			"tools": ['ps'],
-			"images": ['iw001.jpg', 'iw002.jpg', 'iw003.jpg', 'iw004.jpg']
+			"images": ['iw007-1000x.jpg', 'iw009-1000x.jpg', 'iw011-1000x.jpg', 'iw019-1000x.jpg', 'iw020-1000x.jpg']
 		},
 		{
 			"text": 'PRV Team',
+			"link": 'http://www.prvteam.hu',
 			"year": '2016',
 			"month": 'December',
 			"tools": ['sketch'],
