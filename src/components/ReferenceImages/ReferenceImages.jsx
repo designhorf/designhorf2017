@@ -1,12 +1,19 @@
 import React from 'react';
 
 export default function ReferenceImages ({ data }) {
+    const imgPath = './src/components/References/Images/';
+
     return (
         <div>
             {
                 data.map((image, index) => 
                     <div className="reference-image" key={ index }>
-                        <img src={`./src/components/References/Images/${ image }`} alt={`${image}`} />
+                        <img src={`${imgPath}${image}-mobile.jpg`} 
+                        srcSet={
+                        ` ${imgPath}${image}.jpg 1000w,
+                        ${imgPath}${image}-mobile.jpg 480w`
+                        }
+                        alt={`${image}`} />
                     </div>
                 )
             }
