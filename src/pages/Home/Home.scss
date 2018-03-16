@@ -21,8 +21,16 @@
     @media (min-width: 1024px) {
         margin-top: 0;
     }
+}
 
+.ppic {
+    max-width: 688px;
+    overflow: hidden;
+}
 
+.ppic img {
+    margin-bottom: -5px;
+    transition: all .95s ease-in-out;
 }
 
 .home {
@@ -31,4 +39,18 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 50px;
+}
+
+.btn {
+    &-link {
+        position: absolute;
+    }
+
+    &-link1 {
+        margin-left: -255px;
+    }
+
+    &-link2 {
+        margin-left: 255px;
+    }
 }

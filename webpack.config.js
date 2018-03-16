@@ -1,12 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {
+  buildDir,
+  sourceEntry
+} = require('./config');
 
 module.exports = {  
-  entry: [
-    path.join(__dirname, 'src/index.jsx'),
-  ],
+  entry: [ sourceEntry ],
   output: {
-    path: path.join(__dirname, 'src/build'),
+    path: buildDir,
     filename: 'build.js',
   },
   plugins: [

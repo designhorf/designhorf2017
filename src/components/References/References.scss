@@ -8,9 +8,23 @@
 
 .reference-wrap {
     margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+}
+
+.reference-link {
+  margin-left: 10px;
 }
 
 .reference-image {
+  margin-bottom: 20px;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
   img {
     max-width: 100%;
   }
