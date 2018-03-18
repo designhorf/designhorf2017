@@ -6,16 +6,8 @@ export default function CommitBody ({ index, isProject, text, date }) {
 	const year = {date}.date.slice(0,4),
 		month = {date}.date.slice(5),
 		startDate = new Date(year, month - 1),
-		today = new Date(),
-		_MS_PER_DAY = 1000 * 60 * 60 * 24;
+		today = new Date();
 	
-	function dateDiffInDays(a, b) {
-	  const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate()),
-	  		utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
-	
-	  return Math.floor((utc2 - utc1) / _MS_PER_DAY);
-	}
-
 	return (
 		<div key={ index } className={ getClassName(isProject) }>
 			<img className="profile-pic" src={ ProfilePic } alt="profile pic"/>			
@@ -32,6 +24,14 @@ export default function CommitBody ({ index, isProject, text, date }) {
 			</div>
 		</div>
 	)
+}
+
+function dateDiffInDays (a, b) {
+	const _MS_PER_DAY = 1000 * 60 * 60 * 24,
+		utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate()),
+		utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+  
+	return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 }
 
 function getClassName (isProject) {
