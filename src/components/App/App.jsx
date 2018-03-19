@@ -6,7 +6,7 @@ import Design from './../../pages/Design';
 import Code from './../../pages/Code';
 import './App.scss';
 
-export default function App({ data }) {  
+export default function App ({ data }) {  
   return (
 		<HashRouter>
 			<div>
