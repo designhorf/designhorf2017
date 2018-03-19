@@ -7,7 +7,6 @@
     font-family: 'Raleway', sans-serif;
     font-size: 1.7em;
     font-weight: 700;
-    // position: absolute;
 
     @media (min-width: 400px) and (max-width: 600px) {
         font-size: 2em;
@@ -24,7 +23,6 @@
     &-design {
         background-color: $gray;
         color: $lightgray;
-        // left: 15%;
         padding: 5px 10px;
         transform: rotateZ(-15deg);
     }
@@ -33,11 +31,18 @@
         background-color: $lightgray;
         color: $gray;
         padding: 5px 20px;
-        // right: 20%;
-        transform: rotateZ(15deg);
-        
-        // @media (min-width: 1600px) {
-        //     right: 25%;
-        // }
+        transform: rotateZ(15deg);   
+    }
+}
+
+.link {
+    position: absolute;
+
+    &-design {
+        margin-left: -255px;
+    }
+
+    &-code {
+        margin-left: 255px;
     }
 }
