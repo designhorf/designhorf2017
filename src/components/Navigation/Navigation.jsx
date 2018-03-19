@@ -7,9 +7,9 @@ export default function Navigation () {
         <header className="navigation">
             <nav>
                 <ul className="navigation-list">
-                    <MenuElement linkTarget='/' menuText='Home' />
-                    <MenuElement linkTarget='/code' menuText='Code' />
-                    <MenuElement linkTarget='/design' menuText='Design' />
+                    <MenuElement target='/' text='Home' />
+                    <MenuElement target='/code' text='Code' />
+                    <MenuElement target='/design' text='Design' />
                 </ul>
             </nav>
         </header>
