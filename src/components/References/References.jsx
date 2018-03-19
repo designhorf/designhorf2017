@@ -4,13 +4,6 @@ import ReferenceImages from '../ReferenceImages';
 import './References.scss';
 
 export default function References ({ data }) {
-    function reference2(ref) {
-        if (ref) {
-            console.log(ref),
-            <a href={ref}>DSFSD</a>
-        }
-    }
-
     return (
         <div className="references">
             {
