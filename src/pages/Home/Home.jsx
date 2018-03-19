@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Introduction from './../../components/Introduction';
 import Button from './../../components/Button';
 // import ProfilePic from './FH.png';
@@ -39,11 +38,7 @@ export default function Home() {
 		<div className="content">
 			<Introduction />
 			<div className="home">
-				<div className="btn-link btn-link1">
-					<Link to='/design'>
-						<Button buttonText="Design" buttonClass="btn-design" />
-					</Link>
-				</div>
+				<Button link="/design" text="Design" btnClass="btn-design" />
 
 				<div className="ppic" onClick={ clickFunction }>
 					<img id="ppic1" src={ ProfilePic1 } alt=""/>
@@ -60,11 +55,8 @@ export default function Home() {
 					<img id="ppic12" src={ ProfilePic12 } alt=""/>
 				</div>
 				{/* <img className="big-profile-pic" src={ ProfilePic } alt="Ferenc Horvath"/> */}
-				<div className="btn-link btn-link2">
-					<Link to='/code'>
-						<Button buttonText="Code" buttonClass="btn-code" />
-					</Link>
-				</div>
+
+				<Button link="/code" text="Code" btnClass="btn-code" />
             </div>
 		</div>
 	);
