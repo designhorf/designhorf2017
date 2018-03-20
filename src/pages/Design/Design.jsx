@@ -41,6 +41,13 @@ export default function Design() {
 			'month': 'January',
 			'tools': ['ps', 'camera'],
 			'images': ['jtmd']
+		},
+		{
+			'text': 'Upcoming project',
+			'year': '2017',
+			'month': 'December',
+			'tools': ['sketch'],
+			'images': ['mela', 'mela-tshirt', 'mela-spring']
 		}
 	];
 
