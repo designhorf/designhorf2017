@@ -1,4 +1,5 @@
 import React from 'react';
+import GitCommitIcon from '../GitCommitIcon';
 import './CommitHeader.scss';
 
 export default function CommitHeader ({ data, index }) {
@@ -16,7 +17,7 @@ export default function CommitHeader ({ data, index }) {
 
 	return (
 		<div key={ index } className="title top-space title-bottom-space">
-			<div className="square"></div>
+			<GitCommitIcon />
 			<p className="commit-date italic bold commit-header">
 				Commits on { month2 }, { year }
 			</p>

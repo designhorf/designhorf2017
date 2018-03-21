@@ -1,0 +1,13 @@
+@import '../Colours.scss';
+
+.git-commit-icon {
+    background-color: $white;
+    margin-left: -19px;
+    padding: 2px 0px;
+    position: absolute;
+    z-index: 1;
+    
+    &__red {
+        fill: $red;
+    }
+}
