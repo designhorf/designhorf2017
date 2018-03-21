@@ -20,14 +20,6 @@ export default function Design() {
 			'images': ['iw007-1000x', 'iw009-1000x', 'iw011-1000x', 'iw019-1000x', 'iw020-1000x']
 		},
 		{
-			'text': 'PRV Team',
-			'link': 'http://www.prvteam.hu',
-			'year': '2016',
-			'month': 'December',	
-			'tools': ['sketch'],
-			'images': ['prvteam-mockup-long']
-		},
-		{
 			'text': 'Layout design for Little Italy Restaurant',
 			'year': '2016',
 			'month': 'January',
@@ -38,9 +30,24 @@ export default function Design() {
 			'text': 'Design opening & closing screen for Journey to my dreams daily vlog',
 			'link': 'http://bit.ly/1R8Kqt6',
 			'year': '2016',
-			'month': 'January',
+			'month': 'February',
 			'tools': ['ps', 'camera'],
 			'images': ['jtmd']
+		},
+		{
+			'text': 'PRV Team',
+			'link': 'http://www.prvteam.hu',
+			'year': '2016',
+			'month': 'December',	
+			'tools': ['sketch'],
+			'images': ['prvteam-mockup-long']
+		},
+		{
+			'text': 'Tailored Tunes admin site',
+			'year': '2017',
+			'month': 'August',
+			'tools': ['ps', 'invision'],
+			'images': ['tatu-admin3-normal', 'tatu-admin2-normal', 'tatu-admin-normal']
 		},
 		{
 			'text': 'Upcoming project',
