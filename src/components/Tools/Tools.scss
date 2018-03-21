@@ -5,8 +5,12 @@
 }
 
 .tool-icon {
-    height: 30px;
+    height: 24px;
     margin-right: 15px;
+    
+    @include mq($mobileS) {
+        height: 29px;
+    }
     
     @include mq($mobileX) {
         height: 50px;
