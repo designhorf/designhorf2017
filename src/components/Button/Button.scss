@@ -1,4 +1,5 @@
 @import '../Colours.scss';
+@import '../Mixins.scss';
 
 .btn {
     border: 0;
@@ -7,16 +8,16 @@
     font-family: 'Raleway', sans-serif;
     font-size: 1.7em;
     font-weight: 700;
-
-    @media (min-width: 400px) and (max-width: 600px) {
+    
+    @include mq($mobile) {
         font-size: 2em;
     }
 
-    @media (min-width: 601px) and (max-width: 1024px) {
+    @include mq($mobileX) {
         font-size: 3.3em;
     }
 
-    @media (min-width: 1025px) {
+    @include mq($desktop) {
         font-size: 4.5em;
     }
 
@@ -39,10 +40,34 @@
     position: absolute;
 
     &-design {
-        margin-left: -255px;
+        margin-left: -100px;
+        
+        @include mq($mobile) {
+            margin-left: -120px;
+        }
+
+        @include mq($mobileX) {
+            margin-left: -165px;
+        }
+
+        @include mq($tablet) {
+            margin-left: -255px;
+        }
     }
 
     &-code {
-        margin-left: 255px;
+        margin-left: 100px;
+
+        @include mq($mobile) {
+            margin-left: 120px;
+        }
+        
+        @include mq($mobileX) {
+            margin-left: 165px;
+        }
+        
+        @include mq($tablet) {
+            margin-left: 255px;
+        }
     }
 }

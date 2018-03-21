@@ -1,4 +1,5 @@
 @import '../Colours.scss';
+@import '../Mixins.scss';
 
 .project {
     background-color: $red;
@@ -18,25 +19,26 @@
 
     .profile-pic {
         border-radius: 3px;
+        display: none;
         height: 40px;
         margin-right: 10px;
         width: 40px;
 
-        @media (max-width: 499px) {
-            display: none;
+        @include mq($mobile) {
+            display: initial;
         }
     }
 
     .commit-title {
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 600;
-
-        @media (max-width: 400px) {
-            font-size: 1em;
-        }
-
-        @media (min-width: 401px) and (max-width: 600px) {
+        
+        @include mq($mobileS) {
             font-size: 1.1em;
+        }        
+        
+        @include mq($mobileX) {
+            font-size: 1.2em;
         }
     }
 
@@ -51,10 +53,10 @@
 
     .committed-ago,
     .username {
-        font-size: .7em;
-
-        @media (max-width: 400px) {
-            font-size: .6em;
+        font-size: .6em;
+        
+        @include mq($mobileS) {
+            font-size: .7em;
         }
     }
 

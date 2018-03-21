@@ -1,4 +1,5 @@
 @import '../Colours';
+@import '../Mixins.scss';
 
 .home-header {
     margin-top: 60px;
@@ -29,27 +30,27 @@ span {
 }
 
 .introduction-1 {
-    font-size: 3.6em;
-
-    @media (min-width: 321px) and (max-width: 600px) {
+    font-size: 2em;
+    
+    @include mq($mobileS) {
         font-size: 2.3em;
     }
 
-    @media (max-width: 320px) {
-        font-size: 2em;
+    @include mq($mobileX) {
+        font-size: 3.6em;
     }
 }
 
 .introduction-3 {
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: 300;
-
-    @media (min-width: 321px) and (max-width: 600px) {
+    
+    @include mq($mobileS) {
         font-size: 1.65em;
     }
 
-    @media (max-width: 320px) {
-        font-size: 1.3em;
+    @include mq($mobileX) {
+        font-size: 1.8em;
     }
 }
 

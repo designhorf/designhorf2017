@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Raleway:700');
 @import '../Colours.scss';
+@import '../Mixins.scss';
 @import '../Text.scss';
 
 * {
@@ -19,19 +20,11 @@ p {
 }
 
 .content {
-    margin-top: 50px;
-
-    @media (max-width: 600px) {
-        margin-top: 20px;
+    margin-top: 20px;
+    
+    @include mq($mobileX) {
+        margin-top: 50px;
     }
-}
-
-.site-wrapper {
-    background-color: #24eda1;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 40vw;
 }
 
 .main-wrap {
