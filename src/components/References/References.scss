@@ -1,3 +1,5 @@
+@import '../Mixins.scss';
+
 .thin {
   font-weight: 300;
 }
@@ -9,7 +11,7 @@
 .reference-wrap {
     margin-bottom: 40px;
 
-    @media (min-width: 768px) {
+    @include mq($tablet) {
         margin-bottom: 60px;
     }
 }
@@ -21,7 +23,7 @@
 .reference-image {
   margin-bottom: 20px;
   
-  @media (min-width: 768px) {
+  @include mq($tablet) {
     margin-bottom: 40px;
   }
 
