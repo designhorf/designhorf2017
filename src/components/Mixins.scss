@@ -1,0 +1,12 @@
+$mobileS: 375px;
+$mobile: 480px;
+$mobileX: 600px;
+$tablet: 768px;
+$desktop: 1024px;
+$hd: 1200px;
+
+@mixin mq($device) {
+    @media (min-width: #{$device}) {
+        @content;
+    }
+}
