@@ -9,12 +9,11 @@ export default function ReferenceImages ({ data }) {
             {
                 data.map((image, index) => 
                     <div className="reference-image" key={ index }>
-                        <img src={`${imgPath}${image}-mobile.jpg`} 
-                        srcSet={
-                        ` ${imgPath}${image}.jpg 1000w,
-                        ${imgPath}${image}-mobile.jpg 480w`
-                        }
-                        alt={`${image}`} />
+                        <picture>
+                            <source media="(max-width: 480px)" srcSet={`${imgPath}${image}-small.jpg`} />
+                            <source media="(max-width: 768px)" srcSet={`${imgPath}${image}-medium.jpg`} />
+                            <img srcSet={`${imgPath}${image}-large.jpg`} alt={`${image}`} />
+                        </picture>
                     </div>
                 )
             }

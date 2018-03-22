@@ -17,18 +17,18 @@ export default function Design() {
 			'year': '2015',
 			'month': 'From December',
 			'tools': ['ps'],
-			'images': ['iw007-1000x', 'iw009-1000x', 'iw011-1000x', 'iw019-1000x', 'iw020-1000x']
+			'images': ['iw007', 'iw009', 'iw011', 'iw019', 'iw020']
 		},
 		{
 			'text': 'Layout design for Little Italy Restaurant',
 			'year': '2016',
 			'month': 'January',
 			'tools': ['sketch'],
-			'images': ['littleitaly-long']
+			'images': ['littleitaly']
 		},
 		{
 			'text': 'Design opening & closing screen for Journey to my dreams daily vlog',
-			'link': 'http://bit.ly/1R8Kqt6',
+			'link': 'https://bit.ly/2FZPbrG',
 			'year': '2016',
 			'month': 'February',
 			'tools': ['ps', 'camera'],
@@ -40,29 +40,29 @@ export default function Design() {
 			'year': '2016',
 			'month': 'December',	
 			'tools': ['sketch'],
-			'images': ['prvteam-mockup-long']
+			'images': ['prvteam-mockup']
 		},
 		{
 			'text': 'Tailored Tunes admin site',
 			'year': '2017',
 			'month': 'August',
 			'tools': ['ps', 'invision'],
-			'images': ['tatu-admin3-normal', 'tatu-admin2-normal', 'tatu-admin-normal']
+			'images': ['tatu-admin3', 'tatu-admin2', 'tatu-admin']
 		},
-		{
-			'text': 'Upcoming project',
-			'year': '2017',
-			'month': 'December',
-			'tools': ['sketch'],
-			'images': ['mela', 'mela-tshirt', 'mela-spring']
-		}
+		// {
+		// 	'text': 'Upcoming project',
+		// 	'year': '2017',
+		// 	'month': 'December',
+		// 	'tools': ['sketch'],
+		// 	'images': ['mela', 'mela-tshirt', 'mela-spring']
+		// }
 	];
 
 	return (
 		<div className="content">
 			<PageTitle title = 'Design' />
 			<Tools />
-			<References data={ designReferences }/>
+			<References data={ designReferences } />
 		</div>
 	);
 }
