@@ -5,6 +5,10 @@
     background-color: $red;
     border: 1px solid $red;
     color: $white;
+
+    &:hover {
+        background-color: darken($gray, 15%);
+    }
 }
 
 .commit-body {
@@ -16,6 +20,11 @@
     flex-direction: row;
     justify-content: flex-start;
     padding: 10px;
+    transition: all, .35s;
+
+    &:hover:not(.project) {
+        background-color: #f5f5f5;
+    }
 
     .profile-pic {
         border-radius: 3px;
