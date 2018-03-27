@@ -1,6 +1,6 @@
 import React from 'react';
-import ReferenceTools from '../ReferenceTools';
-import ReferenceImages from '../ReferenceImages';
+import ReferenceTools from './ReferenceTools';
+import ReferenceImages from './ReferenceImages';
 import GitCommitIcon from '../GitCommitIcon';
 import './References.scss';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import GitCommitIcon from '../GitCommitIcon';
+import GitCommitIcon from '../../GitCommitIcon';
 import './CommitHeader.scss';
 
 export default function CommitHeader ({ data, index }) {
