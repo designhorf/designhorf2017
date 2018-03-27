@@ -5,7 +5,6 @@ export default function ReferenceImages ({ data }) {
 
     return (
         <div>
-            {console.log({data})}
             {
                 data.map((image, index) => 
                     <div className="reference-image" key={ index }>

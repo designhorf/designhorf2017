@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const {
   buildDir,
   sourceEntry
@@ -14,8 +15,17 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: path.join(__dirname, 'src/index.html')
+        template: path.join(__dirname, 'src/index.html'),
+        excludeChunks: ['base'],
+        minify: {
+            collapseWhitespace: true,
+            collapseInlineTagWhitespace: true,
+            removeComments: true,
+            removeRedundantAttributes: true
+        }
     }),
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin()
   ],
   module: {
     rules: [
