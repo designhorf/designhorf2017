@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePic from './../../assets/images/commits/profile_pic.jpg';
+import ProfilePic from './../../../assets/images/commits/profile_pic.jpg';
 import './CommitBody.scss';
 
 export default function CommitBody ({ index, isProject, text, date }) {

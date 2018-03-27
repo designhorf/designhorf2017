@@ -1,6 +1,6 @@
 import React from 'react';
-import CommitHeader from '../CommitHeader';
-import CommitBody from '../CommitBody';
+import CommitHeader from './CommitHeader';
+import CommitBody from './CommitBody';
 import './Commits.scss';
 
 
