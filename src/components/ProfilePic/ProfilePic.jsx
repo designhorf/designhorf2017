@@ -2,20 +2,29 @@ import React from 'react';
 import './ProfilePic.scss';
 
 export default function ProfilePic () {
+    const imgPath = './../../assets/images/home';
+
     return (
         <div className="ppic" onClick={ photoAnimation }>
-            { imageList }
+            { createProfileImage(imgPath) }
         </div>
     )
 }
 
-const images = importAllImages(require.context('./../../assets/images/home')),
-    imageList = images.map((image, index) => <img src={ image } key={ index } />);
+function createProfileImage (imgPath) {
+    let elements = [];
 
-function importAllImages (r) {
-    return r.keys().map(r);
-}
-  
+    for (let index = 1; index < 13; index++) {
+        if (index < 10) {
+            elements.push(<img srcSet={`${imgPath}/0${index}.jpg`} alt={index} />);
+        } else {
+            elements.push(<img srcSet={`${imgPath}/${index}.jpg`} alt={index} />);
+        }
+    }
+
+    return elements;
+};
+
 function photoAnimation () {
     const pic = document.querySelector('.ppic'),
         allImages = pic.getElementsByTagName('img');
@@ -27,4 +36,4 @@ function photoAnimation () {
             image.style.marginLeft = '687px'
         } 
     })
-}
+};
