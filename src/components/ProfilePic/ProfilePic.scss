@@ -1,10 +1,11 @@
 .ppic {
+    display: flex;
+    flex-direction: column;
     max-width: 688px;
     overflow: hidden;
 }
 
 .ppic img {
-    margin-bottom: -5px;
     max-width: 100%;
-    transition: all .95s ease-in-out;
+    transition: all .95s;
 }
