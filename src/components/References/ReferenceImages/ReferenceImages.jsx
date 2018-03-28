@@ -8,7 +8,6 @@ export default function ReferenceImages ({ data }) {
             {
                 data.map((image, index) => 
                     <div className="reference-image" key={ index }>
-                        {console.log(`${image}, index: ${index}`)}
                         <picture>
                             <source media="(max-width: 480px)" srcSet={`${imgPath}${image}-small.jpg`} />
                             <source media="(max-width: 768px)" srcSet={`${imgPath}${image}-medium.jpg`} />
