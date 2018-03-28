@@ -1,11 +1,11 @@
 module.exports = [
-    {
-        'text': 'Logo design for Varda-Véd Ltd.',
-        'year': '2014',
-        'month': 'July',
-        'tools': ['illustrator'],
-        'images': ['vardaved']
-    },
+    // {
+    //     'text': 'Logo design for Varda-Véd Ltd.',
+    //     'year': '2014',
+    //     'month': 'July',
+    //     'tools': ['illustrator'],
+    //     'images': ['vardaved']
+    // },
     {
         'text': 'Monthly cover picture for Intelligent Waveforms',
         'year': '2015',
