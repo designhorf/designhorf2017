@@ -26,14 +26,14 @@ function createProfileImage (imgPath) {
 };
 
 function photoAnimation () {
-    const pic = document.querySelector('.ppic'),
-        allImages = pic.getElementsByTagName('img');
+    // const pic = document.querySelector('.ppic'),
+    //     allImages = pic.getElementsByTagName('img');
 
-    Object.values(allImages).map((image, index) => {
-        if ((index+1) % 2 == 0) {
-            image.style.marginLeft = '-687px'
-        } else {
-            image.style.marginLeft = '687px'
-        } 
-    })
+    // Object.values(allImages).map((image, index) => {
+    //     if ((index+1) % 2 == 0) {
+    //         image.style.marginLeft = '-687px'
+    //     } else {
+    //         image.style.marginLeft = '687px'
+    //     } 
+    // })
 };
