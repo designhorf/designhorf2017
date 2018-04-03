@@ -27,7 +27,7 @@ module.exports = {
                 removeRedundantAttributes: true
             }
         }),
-        new CopyWebpackPlugin([{ from: sourceImagesDir, to: buildImagesDir }]),
+        new CopyWebpackPlugin([{ from: sourceImagesDir, to: buildImagesDir, ignore: [ '_*.*' ] }]),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         }),
