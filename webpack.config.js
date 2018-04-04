@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 const webpack = require('webpack');
 const {
     buildDir,
@@ -13,7 +14,8 @@ module.exports = {
     entry: [ sourceEntry ],
     output: {
         path: buildDir,
-        filename: 'build.js',
+        // filename: 'build.js',
+        filename: 'build.[chunkhash].js',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -31,7 +33,20 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         }),
-        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            cache: true,
+            parallel: true
+        }),
+        new CompressionPlugin({
+            // include: /\/includes/,
+            // test: /\.js/,
+            // minRatio: 0.8
+            // asset: '[path].gz[query]',
+            // algorithm: 'gzip',
+            test: /\.js$|\.css$|\.html$/,
+            // threshold: 10240,
+            minRatio: 0.8
+        }),
         new webpack.optimize.AggressiveMergingPlugin()
     ],
     module: {
