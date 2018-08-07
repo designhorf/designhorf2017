@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="34px" viewBox="0 0 38 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Sketch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-page---MOBILE" transform="translate(-128.000000, -166.000000)" fill-rule="nonzero">
+            <g id="Logos" transform="translate(20.000000, 166.000000)">
+                <g id="Sketch" transform="translate(108.000000, 0.000000)">
+                    <g id="Group">
+                        <polygon id="Shape" fill="#FDB300" points="8.22684669 1.27867863 18.7643146 0.166015625 29.3017826 1.27867863 37.4598223 12.2167218 18.7643146 33.9607972 0.0688069661 12.2167218"></polygon>
+                        <g transform="translate(0.068807, 12.216722)" id="Shape">
+                            <polygon fill="#EA6C00" points="7.5726875 0 18.6956042 21.744186 0 0"></polygon>
+                            <polygon fill="#EA6C00" transform="translate(28.043117, 10.872093) scale(-1, 1) translate(-28.043117, -10.872093) " points="26.2680019 0 37.3909186 21.744186 18.6953144 0"></polygon>
+                            <polygon fill="#FDAD00" points="7.5726875 0 29.8185208 0 18.6956042 21.744186"></polygon>
+                        </g>
+                        <g transform="translate(0.068807, 0.166016)" id="Shape">
+                            <polygon fill="#FDD231" points="18.6956042 0 8.158125 1.11251163 7.5726875 12.0506279"></polygon>
+                            <polygon fill="#FDD231" transform="translate(24.256835, 6.025314) scale(-1, 1) translate(-24.256835, -6.025314) " points="29.8182936 0 19.2808145 1.11251163 18.695377 12.0506279"></polygon>
+                            <polygon fill="#FDAD00" transform="translate(33.311845, 6.581570) scale(-1, 1) translate(-33.311845, -6.581570) " points="29.2327825 12.0506279 37.3909075 1.11251163 36.80547 12.0506279"></polygon>
+                            <polygon fill="#FDAD00" points="0 12.0506279 8.158125 1.11251163 7.5726875 12.0506279"></polygon>
+                            <polygon fill="#FEEEB7" points="18.6956042 0 7.5726875 12.0506279 29.8185208 12.0506279"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

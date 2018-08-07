@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/images/favicon/apple-touch-icon-57x57.png"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/images/favicon/apple-touch-icon-114x114.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/images/favicon/apple-touch-icon-72x72.png"><link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/images/favicon/apple-touch-icon-144x144.png"><link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/images/favicon/apple-touch-icon-60x60.png"><link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/images/favicon/apple-touch-icon-120x120.png"><link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/images/favicon/apple-touch-icon-76x76.png"><link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/images/favicon/apple-touch-icon-152x152.png"><link rel="icon" href="./assets/images/favicon/favicon-196x196.png" sizes="196x196" type="image/png"><link rel="icon" href="./assets/images/favicon/favicon-96x96.png" sizes="96x96" type="image/png"><link rel="icon" href="./assets/images/favicon/favicon-32x32.png" sizes="32x32" type="image/png"><link rel="icon" href="./assets/images/favicon/favicon-16x16.png" sizes="16x16" type="image/png"><link rel="icon" href="./assets/images/favicon/favicon-128.png" sizes="128x128" type="image/png"><meta name="application-name" content="designhorf's personal website"><meta name="msapplication-TileColor" content="#FFFFFF"><meta name="msapplication-TileImage" content="./assets/images/favicon/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="./assets/images/favicon/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="./assets/images/favicon/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="./assets/images/favicon/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="./assets/images/favicon/mstile-310x310.png"><meta name="viewport" content="width=device-width,initial-scale=1"><title>designhorf's personal website</title></head><body><div id="main" class="main-wrap"></div><script async src="https://www.googletagmanager.com/gtag/js?id=UA-116548398-1"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-116548398-1');</script><script>document.addEventListener("DOMContentLoaded", function() {
+                var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+                var active = false;
+
+                var lazyLoad = function() {
+                    if (active === false) {
+                    active = true;
+
+                    setTimeout(function() {
+                        lazyImages.forEach(function(lazyImage) {
+                        if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.srcset = lazyImage.dataset.srcset;
+                            lazyImage.classList.remove("lazy");
+
+                            lazyImages = lazyImages.filter(function(image) {
+                            return image !== lazyImage;
+                            });
+
+                            if (lazyImages.length === 0) {
+                            document.removeEventListener("scroll", lazyLoad);
+                            window.removeEventListener("resize", lazyLoad);
+                            window.removeEventListener("orientationchange", lazyLoad);
+                            }
+                        }
+                        });
+
+                        active = false;
+                    }, 200);
+                    }
+                };
+
+                document.addEventListener("scroll", lazyLoad);
+                window.addEventListener("resize", lazyLoad);
+                window.addEventListener("orientationchange", lazyLoad);
+            });</script><script type="text/javascript" src="build.6c44faba1a6853e5b8f0.js"></script></body></html>
