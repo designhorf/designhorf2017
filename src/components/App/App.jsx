@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+// import { withRouter } from 'react-router';
 import Navigation from '../Navigation';  
 import Home from './../../pages/Home';
 import Design from './../../pages/Design';
@@ -8,7 +9,7 @@ import './App.scss';
 
 export default function App ({ data }) {  
   return (
-		<HashRouter>
+		<BrowserRouter>
 			<div>
 				<Navigation />
 				<Switch>
@@ -19,6 +20,6 @@ export default function App ({ data }) {
 					/>
 				</Switch>
 			</div>
-		</HashRouter>
+		</BrowserRouter>
   );
 }

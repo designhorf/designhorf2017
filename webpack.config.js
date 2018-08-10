@@ -17,6 +17,9 @@ module.exports = {
         // filename: 'build.js',
         filename: 'build.[chunkhash].js',
     },
+    devServer: {
+        historyApiFallback: true
+    },
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
@@ -38,13 +41,7 @@ module.exports = {
             parallel: true
         }),
         new CompressionPlugin({
-            // include: /\/includes/,
-            // test: /\.js/,
-            // minRatio: 0.8
-            // asset: '[path].gz[query]',
-            // algorithm: 'gzip',
             test: /\.js$|\.css$|\.html$/,
-            // threshold: 10240,
             minRatio: 0.8
         }),
         new webpack.optimize.AggressiveMergingPlugin()
