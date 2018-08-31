@@ -43,6 +43,14 @@ module.exports = [
         'tools': ['ps', 'invision'],
         'images': ['tatu-admin3', 'tatu-admin2', 'tatu-admin']
     },
+    {
+        'text': 'Move 2 the Rock',
+        'link': 'http://bit.ly/move2TheRock',
+        'year': '2018',
+        'month': 'July',
+        'tools': ['sketch', 'invision'],
+        'images': ['m2tr3', 'm2tr4']
+    }
     // {
     // 	'text': 'Upcoming project',
     // 	'year': '2017',
