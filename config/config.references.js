@@ -50,6 +50,35 @@ module.exports = [
         'month': 'July',
         'tools': ['sketch', 'invision'],
         'images': ['m2tr3', 'm2tr4']
+    },
+    {
+        'text': 'Cukorhal logo design',
+        'link': 'https://www.facebook.com/cukorhalcopywriting',
+        'year': '2020',
+        'month': 'February',
+        'tools': ['sketch'],
+        'images': ['cukorhal-logo']
+    },
+    {
+        'text': 'Cukorhal Visuals website design',
+        'year': '2020',
+        'month': 'August',
+        'tools': ['sketch'],
+        'images': ['cukorhalvisuals', 'cukorhalvisuals-prices']
+    },
+    {
+        'text': 'New designhorf.com site concept',
+        'year': '2020',
+        'month': 'August',
+        'tools': ['sketch'],
+        'images': ['designhorf-new']
+    },
+    {
+        'text': 'Unique Instagram feed + stroy design',
+        'year': '2020',
+        'month': 'Sept',
+        'tools': ['ps'],
+        'images': ['instagram-feed-design', 'instagram-story-design', 'instagram-post']
     }
     // {
     // 	'text': 'Upcoming project',
