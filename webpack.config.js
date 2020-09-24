@@ -27,19 +27,21 @@ module.exports = {
             excludeChunks: ['base'],
             minify: {
                 collapseWhitespace: true,
-                collapseInlineTagWhitespace: true,
                 removeComments: true,
-                removeRedundantAttributes: true
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
             }
         }),
         new CopyWebpackPlugin([{ from: sourceImagesDir, to: buildImagesDir, ignore: [ '_*.*' ] }]),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            cache: true,
-            parallel: true
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     cache: true,
+        //     parallel: true
+        // }),
         new CompressionPlugin({
             test: /\.js$|\.css$|\.html$/,
             minRatio: 0.8
