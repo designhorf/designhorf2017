@@ -2,7 +2,7 @@ import React from 'react';
 import './ToolIcons.scss';
 
 export default function ToolIcons () {
-    const tools = ['ps', 'illustrator', 'sketch', 'invision', 'marvel'];
+    const tools = ['ps', 'sketch2', 'invision'];
     const imgPath = './../../assets/images/tools';
 
     return (

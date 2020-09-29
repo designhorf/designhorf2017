@@ -17,7 +17,7 @@ module.exports = [
         'text': 'Layout design for Little Italy Restaurant',
         'year': '2016',
         'month': 'January',
-        'tools': ['sketch'],
+        'tools': ['sketch2'],
         'images': ['littleitaly']
     },
     {
@@ -33,7 +33,7 @@ module.exports = [
         'link': 'http://www.prvteam.hu',
         'year': '2016',
         'month': 'December',	
-        'tools': ['sketch'],
+        'tools': ['sketch2'],
         'images': ['prvteam-mockup']
     },
     {
@@ -48,7 +48,7 @@ module.exports = [
         'link': 'http://bit.ly/move2TheRock',
         'year': '2018',
         'month': 'July',
-        'tools': ['sketch', 'invision'],
+        'tools': ['sketch2', 'invision'],
         'images': ['m2tr3', 'm2tr4']
     },
     {
@@ -56,21 +56,21 @@ module.exports = [
         'link': 'https://www.facebook.com/cukorhalcopywriting',
         'year': '2020',
         'month': 'February',
-        'tools': ['sketch'],
+        'tools': ['sketch2'],
         'images': ['cukorhal-logo']
     },
     {
         'text': 'Cukorhal Visuals website design',
         'year': '2020',
         'month': 'August',
-        'tools': ['sketch'],
+        'tools': ['sketch2'],
         'images': ['cukorhalvisuals', 'cukorhalvisuals-prices']
     },
     {
         'text': 'New designhorf.com site concept',
         'year': '2020',
         'month': 'August',
-        'tools': ['sketch'],
+        'tools': ['sketch2'],
         'images': ['designhorf-new']
     },
     {
@@ -84,7 +84,7 @@ module.exports = [
     // 	'text': 'Upcoming project',
     // 	'year': '2017',
     // 	'month': 'December',
-    // 	'tools': ['sketch'],
+    // 	'tools': ['sketch2'],
     // 	'images': ['mela', 'mela-tshirt', 'mela-spring']
     // }
 ]
