@@ -1,6 +1,7 @@
 import React from 'react';
 import ReferenceTools from './ReferenceTools';
 import ReferenceImages from './ReferenceImages';
+import ReferenceVideos from './ReferencVideos';
 import GitCommitIcon from '../GitCommitIcon';
 import './References.scss';
 
@@ -22,7 +23,11 @@ export default function References ({ data }) {
                             <ReferenceTools data={ reference.tools } />
                         </div>
                         <br/>
-                        <ReferenceImages data={ reference.images } />
+                        {
+                            reference.images 
+                                ? <ReferenceImages data={ reference.images } /> 
+                                : <ReferenceVideos data={ reference.videos } />
+                        }
 					</section>
 				)
 			}

@@ -63,28 +63,38 @@ module.exports = [
         'text': 'Cukorhal Visuals website design',
         'year': '2020',
         'month': 'August',
-        'tools': ['sketch2'],
+        'tools': ['figma', 'sketch2'],
         'images': ['cukorhalvisuals', 'cukorhalvisuals-prices']
     },
     {
         'text': 'New designhorf.com site concept',
         'year': '2020',
         'month': 'August',
-        'tools': ['sketch2'],
+        'tools': ['figma', 'sketch2'],
         'images': ['designhorf-new']
     },
     {
         'text': 'Unique Instagram feed + stroy design',
         'year': '2020',
         'month': 'Sept',
-        'tools': ['ps'],
+        'tools': ['ps', 'figma'],
         'images': ['instagram-feed-design', 'instagram-story-design', 'instagram-post']
+    },
+    {
+        'text': 'Motion design for social media posts',
+        'year': '2020-2021',
+        'month': 'Dec-Jan',
+        'tools': ['ae'],
+        'videos': [
+            {
+                'source': 'https://player.vimeo.com/video/491689506'
+            },
+            {
+                'source': 'https://player.vimeo.com/video/500032611'
+            },
+            {
+                'source': 'https://player.vimeo.com/video/500037224'
+            }
+        ]
     }
-    // {
-    // 	'text': 'Upcoming project',
-    // 	'year': '2017',
-    // 	'month': 'December',
-    // 	'tools': ['sketch2'],
-    // 	'images': ['mela', 'mela-tshirt', 'mela-spring']
-    // }
 ]

@@ -1,0 +1,23 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Figma">
+<rect id="Rectangle Copy 15" x="1.5" y="1.5" width="77" height="77" fill="url(#paint0_linear)" stroke="#1C1C1C" stroke-width="3"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<rect id="Rectangle Copy 15_2" x="1.5" y="1.5" width="77" height="77" fill="white" stroke="white" stroke-width="3"/>
+</mask>
+<g mask="url(#mask0)">
+<g id="figma-1">
+<path id="path0_fill" d="M31.2358 67.415C36.334 67.415 40.4716 63.2774 40.4716 58.1792V48.9434H31.2358C26.1376 48.9434 22 53.081 22 58.1792C22 63.2774 26.1376 67.415 31.2358 67.415Z" fill="#0ACF83"/>
+<path id="path1_fill" d="M22 39.7075C22 34.6093 26.1376 30.4717 31.2358 30.4717H40.4716V48.9433H31.2358C26.1376 48.9433 22 44.8057 22 39.7075Z" fill="#A259FF"/>
+<path id="path1_fill_1_" d="M22 21.2358C22 16.1376 26.1376 12 31.2358 12H40.4716V30.4716H31.2358C26.1376 30.4716 22 26.334 22 21.2358Z" fill="#F24E1E"/>
+<path id="path2_fill" d="M40.4717 12H49.7075C54.8057 12 58.9433 16.1376 58.9433 21.2358C58.9433 26.334 54.8057 30.4716 49.7075 30.4716H40.4717V12Z" fill="#FF7262"/>
+<path id="path3_fill" d="M58.9433 39.7075C58.9433 44.8057 54.8057 48.9433 49.7075 48.9433C44.6093 48.9433 40.4717 44.8057 40.4717 39.7075C40.4717 34.6093 44.6093 30.4717 49.7075 30.4717C54.8057 30.4717 58.9433 34.6093 58.9433 39.7075Z" fill="#1ABCFE"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="-40" y1="40" x2="40" y2="120" gradientUnits="userSpaceOnUse">
+<stop stop-color="#454545"/>
+<stop offset="1" stop-color="#212121"/>
+</linearGradient>
+</defs>
+</svg>

@@ -6,7 +6,7 @@ export default function Tools () {
     return (
         <div className="tools">
             <div className="tools-title bottom-space">
-                <h2>My favourite tools: </h2>
+                <h2>Tools what I use: </h2>
             </div>
             <ToolIcons />
         </div>
